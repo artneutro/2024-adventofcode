@@ -7,11 +7,11 @@ for line in input.readlines():
     right.append(items[1])
 left = sorted(left)
 right = sorted(right)
-print(left, right)
 distance = 0
 i = 0
 while i < len(left) :
     distance = distance + abs(int(right[i]) - int(left[i]))
     i = i+1
 print(distance)
+
 
